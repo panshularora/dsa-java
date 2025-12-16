@@ -35,3 +35,24 @@ public class question_217 {
 //         }
 //         return false;
 //     }
+
+
+
+// the above expressions gave me o(n logn) complexity cus sorting is n logn 
+// we can do it better by using HashSet
+// basically they store unique values and no duplicates are allowerd order is also not gauraanted but is super fast
+// import java.util.HashSet;
+
+// class Solution {
+//     public boolean containsDuplicate(int[] nums) {
+//         HashSet<Integer> set = new HashSet<>();
+
+//         for (int num : nums) {
+//             if (set.contains(num)) {
+//                 return true;
+//             }
+//             set.add(num);
+//         }
+//         return false;
+//     }
+// }
